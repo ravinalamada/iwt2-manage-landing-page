@@ -1,0 +1,38 @@
+
+  .manage--features3 {
+    background-color: hsl(12, 88%, 59%);
+    padding-bottom: 30px;
+  }
+
+  .manage--features3__btn {
+    @include button;
+    background-color: white;
+    color: hsl(12, 88%, 59%);
+  }
+
+  .manage--features3__heading {
+    font-weight: 700;
+    font-size: 30px;
+    color: white
+  }
+
+.manage--features3--wrapper {
+  @include flexColumn;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+
+  .manage--features3--wrapper {
+    @include breakpoint;
+    @include flexRow;
+  }
+
+  .manage--features3__heading {
+    font-weight: 700;
+    font-size: 30px;
+    width: 38%;
+    color: white
+  }
+}

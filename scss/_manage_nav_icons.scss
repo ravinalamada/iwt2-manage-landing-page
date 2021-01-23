@@ -1,0 +1,33 @@
+.footer__nav--icons {
+  @include flexRow;
+}
+
+.footer__links--icons {
+  display: block;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer__items {
+  width: 50px;
+}
+
+.footer__links--icons--facebook {
+  background-image: url(../images/icon-facebook.svg);
+}
+
+.footer__links--icons--youtube {
+  background-image: url(../images/icon-facebook.svg);
+}
+
+.footer__links--icons--twitter {
+  background-image: url(../icons/icon-twitter.svg);
+}
+
+.footer__links--icons--pinterest {
+  background-image: url(../icons/icon-pinterest.svg);
+}
+
+.footer__links--icons--instagram {
+  background-image: url(../icons/icon-instagram.svg);
+}

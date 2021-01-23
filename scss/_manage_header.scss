@@ -1,0 +1,44 @@
+
+.manage__header--container {
+  @include flexColumn;
+  flex-direction: column-reverse;
+  margin-bottom: 100px;
+}
+
+.manage__header__btn {
+  @include button;
+}
+
+.manage__header--desc {
+  color: hsl(227, 12%, 61%);
+  font-size: 13px;
+  // width: 50%;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+@media (min-width:1000px) {
+
+  .manage__header--container {
+    @include breakpoint;
+    @include flexRow;
+    align-items: flex-start;
+    margin-top: 100px;
+  }
+
+  .manage__header__heading {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 0;
+  }
+
+  .manage__header--desc {
+    width: 55%;
+  }
+
+}
+
+
+
+

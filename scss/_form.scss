@@ -1,0 +1,22 @@
+.footer__form {
+  @include flexRow;
+  justify-content: center;
+  margin-top: -16px;
+}
+
+.footer__btn {
+  @include button;
+  margin-left: 16px;
+}
+
+.footer__input {
+  color: hsl(227, 12%, 61%);
+  background-color: white;
+  padding-left: 16px;
+  padding-right: 20px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: transparent;
+  box-shadow: 0px 0px 1px gray;
+}

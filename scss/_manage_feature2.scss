@@ -1,0 +1,100 @@
+
+
+.manage--features2__section2--desc,
+.manage--features2__section3--desc {
+  font-size: 13px;
+  line-height: 15px;
+  color: hsl(227, 12%, 61%);
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.manage--features2__section2 {
+    background-color: hsl(0, 0%, 98%);
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+
+.manage--features2__section,
+.manage--features2__section3 {
+    display: none;
+  }
+
+  .manage--features2__section__img,
+  .manage--features2__section2__img,
+  .manage--features2__section3__img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    top: -2.5rem;
+  }
+
+  .manage--features2__section--name,
+  .manage--features2__section2--name,
+  .manage--features2__section3--name {
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: -1rem;
+  }
+
+  .features__btn--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .manage--features2__section__btn {
+    @include button;
+    margin-top: 25px;
+  }
+
+  .manage--features2__header__heading {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+@media (min-width: 1000px) {
+
+  .manage--features2 {
+    margin-bottom: 200px;
+  }
+
+  .manage--feature2--wrapper {
+    @include flexRow;
+    gap: 32px;
+  }
+
+  .manage--features2__section,
+  .manage--features2__section2,
+  .manage--features2__section3 {
+    display: block;
+    background-color: hsl(0, 0%, 98%);
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .manage--features2__section2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .manage--features2__section4__span {
+    display: block;
+    text-indent: -9999px;
+  }
+
+  .manage--features2__section__btn {
+    @include button;
+    margin-left: 25%;
+    margin-top: 40px;
+  }
+
+}

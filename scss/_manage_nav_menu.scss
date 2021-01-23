@@ -1,0 +1,9 @@
+
+.footer__link--active {
+  color:  hsl(227, 12%, 61%);
+}
+
+.footer__nav--active {
+  display: grid;
+  grid-template-columns: repeat(2, 30%);
+}

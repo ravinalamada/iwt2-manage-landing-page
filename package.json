@@ -1,0 +1,23 @@
+{
+  "name": "iwt2-manage-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "script.js",
+  "scripts": {
+    "css": "node-sass scss/index.scss -o webroot/css",
+    "css:watch": "npm run css && node-sass scss -w -o webroot/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravinalamada/iwt2-manage-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravinalamada/iwt2-manage-landing-page/issues"
+  },
+  "homepage": "https://github.com/ravinalamada/iwt2-manage-landing-page#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
