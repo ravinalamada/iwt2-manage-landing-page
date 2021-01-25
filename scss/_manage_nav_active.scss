@@ -1,0 +1,35 @@
+.footer__nav--active {
+  margin-top: 40px;
+}
+
+.footer__list--active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // text-align: justify;
+}
+
+.footer__items--active {
+  flex-basis: 50%;
+}
+
+.footer__items--active:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.footer__items--active:last-of-type {
+  text-align: left;
+}
+
+.footer__link--active {
+  color:  hsl(227, 12%, 61%);
+}
+
+@media (min-width: 1000px) {
+  .footer__list--active {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 185px;
+  }
+}
+

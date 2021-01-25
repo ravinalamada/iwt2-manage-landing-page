@@ -1,9 +1,8 @@
-
-.footer__link--active {
-  color:  hsl(227, 12%, 61%);
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
 }
 
-.footer__nav--active {
-  display: grid;
-  grid-template-columns: repeat(2, 30%);
-}
+.header__nav {}

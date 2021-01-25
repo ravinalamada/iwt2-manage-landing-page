@@ -17,7 +17,7 @@ ul {
 li {
   list-style: none; }
 
-image {
+img {
   width: 100%; }
 
 a {
@@ -290,12 +290,37 @@ button {
     width: 38%;
     color: white; } }
 
+.footer__nav--active {
+  margin-top: 40px; }
+
+.footer__list--active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.footer__items--active {
+  flex-basis: 50%; }
+
+.footer__items--active:not(:last-of-type) {
+  margin-bottom: 16px; }
+
+.footer__items--active:last-of-type {
+  text-align: left; }
+
 .footer__link--active {
   color: #9095a7; }
 
-.footer__nav--active {
-  display: grid;
-  grid-template-columns: repeat(2, 30%); }
+@media (min-width: 1000px) {
+  .footer__list--active {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 185px; } }
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem; }
 
 .footer__nav--icons {
   display: flex;
@@ -362,7 +387,9 @@ button {
 .footer {
   background-color: #1d1e25;
   padding-top: 60px;
-  text-align: center; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .footer--desc {
   text-align: center;
