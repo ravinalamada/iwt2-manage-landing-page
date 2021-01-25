@@ -27,6 +27,7 @@
   .manage--features3--wrapper {
     @include breakpoint;
     @include flexRow;
+    text-align: left;
   }
 
   .manage--features3__heading {

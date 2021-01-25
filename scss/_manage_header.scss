@@ -1,4 +1,10 @@
 
+.manage__header {
+  // background-image: url('../icons/bg-tablet-pattern.svg');
+  // background-repeat: no-repeat;
+  // background-size: cover
+}
+
 .manage__header--container {
   @include flexColumn;
   flex-direction: column-reverse;
@@ -11,8 +17,6 @@
 
 .manage__header--desc {
   color: hsl(227, 12%, 61%);
-  font-size: 13px;
-  // width: 50%;
   padding-left: 16px;
   padding-right: 16px;
   text-align: center;
@@ -23,6 +27,7 @@
   .manage__header--container {
     @include breakpoint;
     @include flexRow;
+    gap: 150px;
     align-items: flex-start;
     margin-top: 100px;
   }
@@ -34,7 +39,9 @@
   }
 
   .manage__header--desc {
-    width: 55%;
+    width: 60%;
+    padding: 0;
+    text-align: left;
   }
 
 }

@@ -61,6 +61,11 @@
     padding-bottom: 40px;
   }
 
+  .manage--features2__section__span {
+    color: transparent;
+    // background-image: url('../webroot/icons/');
+  }
+
 @media (min-width: 1000px) {
 
   .manage--features2 {
@@ -91,10 +96,10 @@
     text-indent: -9999px;
   }
 
-  .manage--features2__section__btn {
-    @include button;
-    margin-left: 25%;
-    margin-top: 40px;
-  }
+  // .manage--features2__section__btn {
+  //   @include button;
+  //   margin-left: 25%;
+  //   margin-top: 40px;
+  // }
 
 }

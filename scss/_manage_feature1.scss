@@ -40,28 +40,41 @@
 
 @media (min-width: 1000px) {
 
-
   .manage--feature1--container {
     @include breakpoint;
     @include flexRow;
     align-items: baseline;
     gap: 150px;
+    text-align: left;
+  }
+
+  .manage__header--wrapper {
+    text-align: left;
   }
 
   .manage--feature1__header__heading {
     font-weight: 700;
     font-size: 30px;
-    width: 80%;
+    width: 90%;
   }
 
   .manage--feature1__header--desc {
     width: 80%;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .manage--feature1--wrapper {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     row-gap: 20px;
+  }
+
+  .manage--feature1__section--wrapper,
+  .manage--feature1__section2--wrapper,
+  .manage--feature1__section3--wrapper {
+     background-color: white;
   }
 
 }
