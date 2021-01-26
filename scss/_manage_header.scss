@@ -1,10 +1,4 @@
 
-.manage__header {
-  // background-image: url('../icons/bg-tablet-pattern.svg');
-  // background-repeat: no-repeat;
-  // background-size: cover
-}
-
 .manage__header--container {
   @include flexColumn;
   flex-direction: column-reverse;
@@ -30,6 +24,10 @@
     gap: 150px;
     align-items: flex-start;
     margin-top: 100px;
+  }
+
+  .manage__header--wrapper {
+    flex-basis: 50%;
   }
 
   .manage__header__heading {

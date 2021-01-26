@@ -28,7 +28,16 @@
   .footer__list--active {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 185px;
+    column-gap: 50px;
+    text-align: justify;
+  }
+
+  .footer__items--active:last-of-type {
+    text-align: unset;
+  }
+
+  .footer__nav--active {
+    margin-top: 0;
   }
 }
 

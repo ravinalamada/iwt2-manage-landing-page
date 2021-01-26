@@ -72,6 +72,8 @@ button {
     gap: 150px;
     align-items: flex-start;
     margin-top: 100px; }
+  .manage__header--wrapper {
+    flex-basis: 50%; }
   .manage__header__heading {
     font-weight: bold;
     font-size: 50px;
@@ -160,6 +162,7 @@ button {
   .manage--feature1__section3--wrapper {
     background-color: white; } }
 
+.manage--features2__section--desc,
 .manage--features2__section2--desc,
 .manage--features2__section3--desc {
   font-size: 13px;
@@ -317,7 +320,12 @@ button {
   .footer__list--active {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 185px; } }
+    column-gap: 50px;
+    text-align: justify; }
+  .footer__items--active:last-of-type {
+    text-align: unset; }
+  .footer__nav--active {
+    margin-top: 0; } }
 
 .header--container {
   margin-left: 16px;
@@ -406,12 +414,14 @@ input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper
     background-image: none; } }
 
 .footer__nav--icons {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.footer__list--icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px; }
+  align-items: center; }
 
 .footer__links--icons {
   display: block;
@@ -419,7 +429,7 @@ input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper
   background-repeat: no-repeat;
   background-size: contain; }
 
-.footer__items {
+.footer__items--icons {
   width: 50px; }
 
 .footer__links--icons--facebook {
@@ -437,7 +447,15 @@ input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper
 .footer__links--icons--instagram {
   background-image: url(../icons/icon-instagram.svg); }
 
-.footer__form {
+@media (min-width: 1000px) {
+  .footer__nav--icons {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .footer__list--icons {
+    justify-content: unset;
+    gap: 3px; } }
+
+.footer__form--container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -469,8 +487,16 @@ input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper
   border-color: transparent;
   box-shadow: 0px 0px 1px gray; }
 
+@media (min-width: 1000px) {
+  .footer__form {
+    display: flex;
+    justify-content: flex-end; }
+  .footer__form--container {
+    margin-top: 0; } }
+
 .footer {
-  background-color: #1d1e25; }
+  background-color: #1d1e25;
+  padding-bottom: 40px; }
 
 .footer--container {
   padding-top: 60px;
@@ -489,16 +515,18 @@ input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper
     margin-right: auto;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 30% 40% 30%; }
+    grid-template-columns: 30% 30% 30%;
+    align-items: flex-start;
+    column-gap: 50px; }
   .footer--wrapper {
     grid-column: 1 / 2;
     grid-row: 1 / 3; }
   .footer__nav--icons {
-    grid-row: 2 / 4;
+    grid-row: 3 / 4;
     grid-column: 1 / 2; }
   .footer__nav--active {
     grid-row: 1 / 4;
-    grid-column: 2 / 4; }
+    grid-column: 2 / 3; }
   .footer__form {
     grid-row: 1;
     grid-column: 3 / 4; }
