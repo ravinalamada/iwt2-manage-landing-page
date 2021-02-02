@@ -1,6 +1,10 @@
-.manage--feature1 {
+  .manage--feature1 {
   margin-bottom: 100px
-}
+  }
+
+  .manage--feature1--container {
+    position: relative;
+  }
 
   .manage--feature1__header--desc,
   .manage--feature1__section--desc,
@@ -36,6 +40,13 @@
     font-weight: 700;
     font-size: 16px;
     margin: 0;
+  }
+
+  .manage--feature1__header {
+    background-image: url('../icons/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
   }
 
 @media (min-width: 1000px) {
