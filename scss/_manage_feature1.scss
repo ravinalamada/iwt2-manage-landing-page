@@ -40,6 +40,10 @@
 
 @media (min-width: 1000px) {
 
+  .manage--feature1 {
+    margin-bottom: 250px;
+  }
+
   .manage--feature1--container {
     @include breakpoint;
     @include flexRow;

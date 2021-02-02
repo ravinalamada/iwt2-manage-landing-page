@@ -1,49 +1,32 @@
-
-.manage__header--container {
-  @include flexColumn;
-  flex-direction: column-reverse;
-  margin-bottom: 100px;
+.header--container {
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
-.manage__header__btn {
-  @include button;
+.header--wrapper {
+  @include flexRow;
 }
 
-.manage__header--desc {
-  color: hsl(227, 12%, 61%);
-  padding-left: 16px;
-  padding-right: 16px;
-  text-align: center;
+.header__btn {
+  display: none;
 }
 
-@media (min-width:1000px) {
+@media (min-width: 1000px) {
 
-  .manage__header--container {
+  .header--container {
     @include breakpoint;
     @include flexRow;
     gap: 150px;
-    align-items: flex-start;
-    margin-top: 100px;
   }
 
-  .manage__header--wrapper {
+  .header--wrapper {
     flex-basis: 50%;
   }
 
-  .manage__header__heading {
-    font-weight: bold;
-    font-size: 50px;
-    margin-top: 0;
+  .header__btn {
+    display: block;
+    @include button;
+    flex-basis: 25%;
+    z-index: 2;
   }
-
-  .manage__header--desc {
-    width: 60%;
-    padding: 0;
-    text-align: left;
-  }
-
 }
-
-
-
-

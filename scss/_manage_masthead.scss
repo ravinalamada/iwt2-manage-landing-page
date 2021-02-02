@@ -1,0 +1,97 @@
+
+.manage__masthead--container {
+  @include flexColumn;
+  flex-direction: column-reverse;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.manage__masthead--wrapper:nth-of-type(1) {
+  padding-top: 400px;
+}
+
+.manage__masthead--wrapper:nth-of-type(2) {
+  background-image: url('../icons/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  left: 10%;
+  top: -31%;
+  right: -39%;
+  bottom: 50%;
+}
+
+.manage__masthead__img {
+  width: 77%;
+  position: absolute;
+  top: 50%;
+  left: -8%;
+}
+
+.manage__masthead__btn {
+  @include button;
+}
+
+.manage__masthead--desc {
+  color: hsl(227, 12%, 61%);
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+@media (min-width:1000px) {
+
+  .manage__masthead--container {
+    @include breakpoint;
+    @include flexRow;
+    gap: 150px;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+  }
+
+  .manage__masthead--wrapper {
+    flex-basis: 50%;
+  }
+
+  .manage__masthead--wrapper:nth-of-type(1) {
+    padding-top: 100px;
+  }
+
+  .manage__masthead--wrapper:nth-of-type(2) {
+    background-image: url('../icons/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 650px 750px;;
+    background-position: bottom;
+    position: absolute;
+    left: 50%;
+    top: -78%;
+    right: -33%;
+    bottom: -5%;
+  }
+
+  .manage__masthead__heading {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 0;
+  }
+
+  .manage__masthead--desc {
+    width: 60%;
+    padding: 0;
+    text-align: left;
+  }
+
+  .manage__masthead__img {
+    position: absolute;
+    top: 56%;
+    left: 11%;
+    width: 50%;
+  }
+
+}
+
+
+
+

@@ -72,6 +72,28 @@
     margin-bottom: 200px;
   }
 
+  .manage--features2--container {
+    position: relative;
+  }
+
+  .manage--features2__header__heading {
+    position: absolute;
+    top: 55%;
+    left: 72%;
+  }
+
+  .manage--features2__header {
+    background-image: url('../icons/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: top;
+    position: absolute;
+    top: -136%;
+    left: -105%;
+    bottom: 100%;
+    right: 0%;
+  }
+
   .manage--feature2--wrapper {
     @include flexRow;
     gap: 32px;
