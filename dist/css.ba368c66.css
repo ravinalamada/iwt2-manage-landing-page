@@ -35,26 +35,33 @@ input,
 button {
   cursor: pointer; }
 
-.manage__masthead {
-  position: relative;
-  background-image: url(../icons/bg-tablet-pattern.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  position: relative; }
-
-.manage__masthead--wrapper:nth-of-type(2) {
-  position: relative; }
-
 .manage__masthead--container {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-direction: column-reverse;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  position: relative; }
 
 .manage__masthead--wrapper:nth-of-type(1) {
-  padding-top: 200px; }
+  padding-top: 400px; }
+
+.manage__masthead--wrapper:nth-of-type(2) {
+  background-image: url("/bg-tablet-pattern.e790200e.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  left: 10%;
+  top: -31%;
+  right: -39%;
+  bottom: 50%; }
+
+.manage__masthead__img {
+  width: 77%;
+  position: absolute;
+  top: 50%;
+  left: -8%; }
 
 .manage__masthead__btn {
   padding-top: 10px;
@@ -74,33 +81,7 @@ button {
   padding-right: 16px;
   text-align: center; }
 
-@media (max-width: 500px) {
-  .manage__masthead {
-    position: relative;
-    top: -123px;
-    left: 79px; }
-  .manage__masthead--wrapper:nth-of-type(1) {
-    padding-top: 200px; }
-  .manage__masthead--wrapper:nth-of-type(2) {
-    top: 123px;
-    left: -81px; } }
-
-@media (min-width: 500px) {
-  .manage__masthead {
-    top: -187px;
-    left: 79px;
-    bottom: 42px;
-    right: 38px; }
-  .manage__masthead--wrapper:nth-of-type(2) {
-    position: relative;
-    top: 241px;
-    left: -14%;
-    right: 3%; } }
-
 @media (min-width: 1000px) {
-  .manage__masthead {
-    background-image: none;
-    position: unset; }
   .manage__masthead--container {
     max-width: 1114px;
     margin-left: auto;
@@ -116,10 +97,9 @@ button {
   .manage__masthead--wrapper {
     flex-basis: 50%; }
   .manage__masthead--wrapper:nth-of-type(1) {
-    padding-top: 100px;
-    position: unset; }
+    padding-top: 100px; }
   .manage__masthead--wrapper:nth-of-type(2) {
-    background-image: url("../icons/bg-tablet-pattern.svg");
+    background-image: url("/bg-tablet-pattern.e790200e.svg");
     background-repeat: no-repeat;
     background-size: 650px 750px;
     background-position: bottom;
@@ -232,6 +212,12 @@ button {
   font-size: 16px;
   margin: 0; }
 
+.manage--feature1__header {
+  background-image: url("/bg-tablet-pattern.e790200e.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom; }
+
 @media (min-width: 1000px) {
   .manage--feature1 {
     margin-bottom: 250px; }
@@ -341,7 +327,7 @@ button {
     top: 55%;
     left: 72%; }
   .manage--features2__header {
-    background-image: url("../icons/bg-tablet-pattern.svg");
+    background-image: url("/bg-tablet-pattern.e790200e.svg");
     background-repeat: no-repeat;
     background-size: 650px;
     background-position: top;
@@ -479,13 +465,13 @@ input[type="checkbox"]:checked ~ body {
 
 .header--menu {
   color: transparent;
-  background-image: url("../icons/icon_menu.svg");
+  background-image: url("/icon_menu.30603bea.svg");
   background-repeat: no-repeat;
   background-position: right;
   z-index: 2; }
 
 input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper > .header--menu {
-  background-image: url("../icons/icon-close.svg");
+  background-image: url("/icon-close.eacae88b.svg");
   background-repeat: no-repeat; }
 
 .header__link {
@@ -537,19 +523,19 @@ input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper
   width: 50px; }
 
 .footer__links--icons--facebook {
-  background-image: url(../icons/icon-facebook.svg); }
+  background-image: url(/icon-facebook.a67021df.svg); }
 
 .footer__links--icons--youtube {
-  background-image: url(../icons/icon-youtube.svg); }
+  background-image: url(/icon-youtube.8ed9edd9.svg); }
 
 .footer__links--icons--twitter {
-  background-image: url(../icons/icon-twitter.svg); }
+  background-image: url(/icon-twitter.6b2112dc.svg); }
 
 .footer__links--icons--pinterest {
-  background-image: url(../icons/icon-pinterest.svg); }
+  background-image: url(/icon-pinterest.45061e89.svg); }
 
 .footer__links--icons--instagram {
-  background-image: url(../icons/icon-instagram.svg); }
+  background-image: url(/icon-instagram.a91b38e2.svg); }
 
 @media (min-width: 1000px) {
   .footer__nav--icons {
@@ -637,3 +623,6 @@ input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper
   .footer--desc {
     grid-column: 3 / 5;
     grid-row: 3; } }
+
+
+/*# sourceMappingURL=/css.ba368c66.css.map */
