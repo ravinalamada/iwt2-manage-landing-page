@@ -106,31 +106,48 @@
               What they've said
             </h3>
           </header>
-          <div class="manage--feature2--wrapper">
-            <section class="manage--features2__section">
-              <img class="manage--features2__section__img" src="./images/avatar-anisha.png" alt="avatar">
-              <p class="manage--features2__section--name">Anisha Li</p>
-              <p class="manage--features2__section--desc"><q>We have been able to cancel so many other
-                subscriptions since using Manage. There is no more cross-channel confusion
-                and everyone is much more focused.</q></p>
-            </section>
-            <section class="manage--features2__section2">
-              <img class="manage--features2__section2__img" src="./images/avatar-ali.png" alt="avatar">
-              <p class="manage--features2__section2--name">Ali Bravo</p>
-              <p class="manage--features2__section2--desc"><q>Manage has supercharged our team’s workflow. The ability to
-                maintain visibility on larger milestones at all times keeps everyone
-                motivated.</q></p>
-            </section>
-            <section class="manage--features2__section3">
-              <img class="manage--features2__section3__img" src="./images/avatar-richard.png" alt="avatar">
-              <p class="manage--features2__section3--name">Richard Watts</p>
-              <p class="manage--features2__section3--desc"><q>Manage allows us to
-                provide structure and process. It keeps us organized and focused. I can’t
-                stop recommending them to everyone I talk to!</q></p>
-            </section>
+          <div class=" container">
+            <div id="slider" class="slider">
+              <section class="manage--features2__section slider-item active">
+                <div class="img-fluid">
+                  <img class="manage--features2__section__img "  src="./images/avatar-anisha.png" alt="avatar">
+                  <p class="manage--features2__section--name">Anisha Li</p>
+                  <p class="manage--features2__section--desc"><q>We have been able to cancel so many other
+                    subscriptions since using Manage. There is no more cross-channel confusion
+                    and everyone is much more focused.</q></p>
+                </div>
+              </section>
+              <section class="manage--features2__section2 slider-item">
+                <div class="img-fluid">
+                  <img class="manage--features2__section2__img " src="./images/avatar-ali.png" alt="avatar">
+                  <p class="manage--features2__section2--name">Ali Bravo</p>
+                  <p class="manage--features2__section2--desc"><q>Manage has supercharged our team’s workflow. The ability to
+                    maintain visibility on larger milestones at all times keeps everyone
+                    motivated.</q></p>
+                </div>
+              </section>
+              <section class="manage--features2__section3 slider-item">
+                <div class="img-fluid">
+                  <img class="manage--features2__section3__img" src="./images/avatar-richard.png" alt="avatar">
+                  <p class="manage--features2__section3--name">Richard Watts</p>
+                  <p class="manage--features2__section3--desc"><q>Manage allows us to
+                    provide structure and process. It keeps us organized and focused. I can’t
+                    stop recommending them to everyone I talk to!</q></p>
+                </div>
+              </section>
+              <section class="manage--features2__section4 slider-item">
+                <div class="img-fluid">
+                  <img class="manage--features2__section4__img " src="./images/avatar-shanai.png" alt="avatar">
+                  <p class="manage--features2__section4--name">Richard Watts</p>
+                  <p class="manage--features2__section4--desc"><q>Manage allows us to
+                    provide structure and process. It keeps us organized and focused. I can’t
+                    stop recommending them to everyone I talk to!</q></p>
+                </div>
+              </section>
+              <ul id="dots" class="list-inline dots"></ul>
+            </div>
           </div>
           <div class="features__btn--wrapper">
-            <span class="manage--features2__section__span">pages</span>
             <button class="manage--features2__section__btn">Get started</button>
           </div>
         </div>
@@ -193,6 +210,7 @@
       <p class="footer--desc">Copyright 2020.All Rights Reserved</p>
     </div>
   </footer>
+  <script src="./slider.js"></script>
 </body>
 
 </html>
