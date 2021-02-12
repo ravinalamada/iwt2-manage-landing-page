@@ -1,10 +1,17 @@
 
 .input--checkbox {
-  visibility: hidden;
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ main,
+input[type="checkbox"]:checked ~ header,
+input[type="checkbox"]:checked ~ footer {
+    z-index: 1;
+    background: rgba(151, 141, 46, 0.4);
 }
 
 .header__nav {
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding: 3rem 1rem;
   background: #fff;
@@ -60,6 +67,7 @@ input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper
 @media (min-width: 1000px) {
   .header__list {
     @include flexRow;
+    margin: 0;
   }
 
   .header__nav {
@@ -71,8 +79,8 @@ input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper
       width: auto;
   }
 
-  .header__list {
-      margin: 0;
+  .header__link {
+    font-weight: bold;
   }
 
   .header__items:not(:last-of-type) {
